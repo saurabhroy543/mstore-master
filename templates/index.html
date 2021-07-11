@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{%block content %}
+{% load static %}
+
+
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div class="banner header-text">
+    <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+            <div class="text-content">
+                <h4>Best Offer</h4>
+                <h2>New Arrivals On Sale</h2>
+            </div>
+        </div>
+        <div class="banner-item-02">
+            <div class="text-content">
+                <h4>Flash Deals</h4>
+                <h2>Get your best products</h2>
+            </div>
+        </div>
+        <div class="banner-item-03">
+            <div class="text-content">
+                <h4>Last Minute</h4>
+                <h2>Grab last minute deals</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Ends Here -->
+
+<div class="latest-products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Latest Products</h2>
+                    <a href="product">view all products <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            {%for item in items%}
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="#"><img src="{{item.imageURL}}" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4>{{item.name}}</h4></a>
+                        <h6>PKR{{item.price}}/-</h6>
+                        <p>{{item.description}}</p>
+                        {%if item.stock %}
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span>In Stock</span>
+                        {% else %}
+                        <ul class="stars">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><h3>Not In Stock</h3></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <span style="color:red;">Coming Back Soon</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+
+<div class="best-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>About M-Store</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="left-content">
+                    <h2 style="color:blue">Looking for the best products?</h2>
+                    <br>
+                    <ul style="color:red;">
+                        <li><h3>You are at the right place,</h3></li>
+                        <br>
+                        <li><h3>We provide our customers with <em> best quality products.</em></h3></li>
+                        <br>
+                        <li><h3>100% genuine products</h3></li>
+                        <br>
+                        <li><h3>Affordable Pricing</h3></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-image" style="height:20em;">
+                    <img src="{%static 'assets/images/Mstore.jpeg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Creative &amp; Unique <em>M-Store</em> Products</h4>
+                            <p></p>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="contact" class="filled-button"> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="help-newsletter" style="  background-image: linear-gradient(to right, #F2C720 , #FED322);">
+    <div class="container">
+        <div class="row">
+            <!-- Need Help -->
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <div class="help-block">
+                    <div class="img"><img src="https://selloship.com/assets/store_new/22/images/help.png" height="100%"
+                                          width="100%"/></div>
+                    <div class="content mt30">
+                        <h3 class="txt-dark">Need help?</h3>
+                        <p><a href="contact" style="text-decoration:none;">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

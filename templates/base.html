@@ -1,0 +1,162 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <link href="https://selloship.com/assets/store_new/22/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://selloship.com/assets/store_new/22/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <title>M-Store</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css '%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+          integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{%static 'assets/css/fontawesome.css '%}">
+    <link rel="stylesheet" href="{%static 'assets/css/templatemo-sixteen.css '%}">
+    <link rel="stylesheet" href="{%static 'assets/css/owl.css '%}">
+
+</head>
+
+<body>
+
+<!-- ***** Preloader Start *****
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+ ***** Preloader End ***** -->
+
+<!-- Header -->
+<header class="">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href=""><h2>M <em>-Store</em></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product">Our Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+{% block content %}
+{% endblock %}
+
+
+<footer>
+    <section id="footer">
+        <div class="container-fluid footer-first">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 blocks">
+                        <h3 class="title">INFORMATION</h3>
+                        <ul class="mt30">
+                            <li><a href="" style="text-decoration:none;">Terms Condition</a></li>
+                            <li><a href="" style="text-decoration:none;">Privacy Policy</a></li>
+                            <li><a href="" style="text-decoration:none;">Return Policy</a></li>
+                            <li><a href="" style="text-decoration:none;">Support</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-sm-8">
+                        <ul class="important-block">
+                            <li><span class="icon"><i class="fa fa-info"></i></span>
+                                <div class="content">
+                                    <h4>Affordable-Easy-Secured</h4>
+                                    <p>at our store</p>
+                                </div>
+                            </li>
+                            <li><span class="icon"><i class="fa fa-undo"></i></span>
+                                <div class="content">
+                                    <h4>Cash On Delivery</h4>
+                                    <p>Two-factor authentication</p>
+                                </div>
+                            </li>
+                            <li><span class="icon"><i class="fa fa-truck"></i></span>
+                                <div class="content">
+                                    <h4>World Wide Delivery</h4>
+                                    <p>27,000+ Pincodes</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid footer-second">
+            <div class="container">
+                <div class="row">
+                    <p class="copyrights">© 2021 <span class="txt-color">MStore</span> All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Additional Scripts -->
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/isotope.js"></script>
+<script src="assets/js/accordions.js"></script>
+
+
+<script language="text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+
+
+
+
+</script>
+
+
+</body>
+
+</html>
